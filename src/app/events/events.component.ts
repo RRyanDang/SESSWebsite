@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { EventCardComponent } from './event-card/event-card.component';
 import { BannerComponent } from '../shared/banner/banner.component';
 import { NavbarComponent } from '../shared/navbar/navbar.component';
@@ -31,6 +31,8 @@ export class EventsComponent {
 
   // ngOnInit() {}
 
-  onTabChange(index: number) {}
+  onTabChange(index: number) {
+    console.log('Tab Changed Here')
+  }
 
 }
