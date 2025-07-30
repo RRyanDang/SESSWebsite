@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { EventCardComponent } from './event-card/event-card.component';
 import { BannerComponent } from '../shared/banner/banner.component';
 import { NavbarComponent } from '../shared/navbar/navbar.component';
@@ -29,7 +29,7 @@ export class EventsComponent {
 
   constructor(private router: Router) { }
 
-  ngOnInit() {}
+  // ngOnInit() {}
 
   onTabChange(index: number) {}
 

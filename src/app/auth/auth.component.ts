@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, Inject } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { MSAL_GUARD_CONFIG, MsalBroadcastService, MsalGuardConfiguration, MsalService } from '@azure/msal-angular';
 // import { AuthenticationResult, EventMessage, EventType, InteractionStatus, PopupRequest, RedirectRequest } from '@azure/msal-browser';
 import { AuthenticationResult, PopupRequest } from '@azure/msal-browser';
@@ -31,7 +31,7 @@ export class AuthComponent {
     private http: HttpClient
   ) {}
 
-  ngOnInit(): void {
+  //ngOnInit(): void {
     // this.authService.handleRedirectObservable().subscribe();
     // // Remove this line to use Angular Universal
     // this.isIframe = window !== window.parent && !window.opener; 
@@ -62,7 +62,7 @@ export class AuthComponent {
     //     this.setLoginDisplay();
     //     this.checkAndSetActiveAccount();
     //   })
-  }
+  //}
 
   setLoginDisplay() {
     this.loginDisplay = this.authService.instance.getAllAccounts().length > 0;
@@ -75,11 +75,11 @@ export class AuthComponent {
      * Note: Basic usage demonstrated. Your app may require more complicated account selection logic
      */
     console.log("checkAndSetActiveAccount");
-    let activeAccount = this.authService.instance.getActiveAccount();
+    const activeAccount = this.authService.instance.getActiveAccount();
 
     if (!activeAccount && this.authService.instance.getAllAccounts().length > 0) {
       console.log("No active account set, but there are accounts. Setting the first account as active account");
-      let accounts = this.authService.instance.getAllAccounts();
+      const accounts = this.authService.instance.getAllAccounts();
       this.authService.instance.setActiveAccount(accounts[0]);
     }
   }

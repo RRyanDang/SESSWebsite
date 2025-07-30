@@ -12,9 +12,9 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class NavbarComponent {
   @Input() items: {title: string, link: string}[] = [];
 
-  ngOnInit() {
+  // ngOnInit() {
 
-  }
+  // }
 
 
 }
