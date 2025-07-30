@@ -25,6 +25,9 @@ jobs:
 
     - name: run Lint
       run: npm run lint
+    
+    - name: ✅ Run Prettier Format Check
+      run: npm run format:check
 
     - name: Run Unit Tests
       run: npm run test -- --watch=false --browsers=ChromeHeadless --code-coverage
