@@ -1,7 +1,8 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+// import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component} from '@angular/core';
 import { CommonModule, NgFor } from '@angular/common';
-import { trigger, state, style, transition, animate } from '@angular/animations';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { trigger, state, style, transition, animate } from '@angular/animations';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 interface Section {
   header: string;
   content: string;
