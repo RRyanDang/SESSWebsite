@@ -14,8 +14,10 @@ import {MatTabsModule} from '@angular/material/tabs';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-  title: string = 'about us';
-  bannerUrl: string = 'https://educationsnapshots.com/wp-content/uploads/sites/4/2022/01/seneca-college-newnham-campus-food-hall-3.jpg';
+  // title: string = 'about us';
+  // bannerUrl: string = 'https://educationsnapshots.com/wp-content/uploads/sites/4/2022/01/seneca-college-newnham-campus-food-hall-3.jpg';
+  title= 'about us';
+  bannerUrl= 'https://educationsnapshots.com/wp-content/uploads/sites/4/2022/01/seneca-college-newnham-campus-food-hall-3.jpg';
 
   // enable our team later.
   

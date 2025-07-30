@@ -9,7 +9,7 @@
         @for (item of items; track item.link) {
           <a mat-tab-link
           (click)="activeLink = item.link"
-          [active]="activeLink == item.link"
+          [active]="activeLink === item.link"
           [routerLink]="item.link"
           class="font-gotham uppercase"
             > {{item.title}} </a>
