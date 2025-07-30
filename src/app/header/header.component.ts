@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component } from '@angular/core';
 import {  Router, RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 // import { Subject, Subscription, filter, takeUntil } from 'rxjs';
 import { Subject, filter, takeUntil } from 'rxjs';
@@ -42,13 +42,29 @@ export class HeaderComponent {
     )
     .subscribe((result: EventMessage) => {
       switch (result.eventType) {
-        case EventType.LOGIN_SUCCESS:
+        // case EventType.LOGIN_SUCCESS:
+        //   console.log(result);
+        //   const payload = result.payload as AuthenticationResult;
+        //   this.authService.instance.setActiveAccount(payload.account);
+        //   // this.getProfile(environment.apiConfig.uri);
+        //   break;
+        // default:
+        //   if (this.authService.instance.getAllAccounts().length === 0) {
+        //     console.log("No accounts detected, logging out");
+        //     window.location.pathname = "/";
+        //   } else {
+        //     console.log("Account data received");
+        //     this.setLoginDisplay();
+        //   }
+        //   break;
+        case EventType.LOGIN_SUCCESS: {
           console.log(result);
           const payload = result.payload as AuthenticationResult;
           this.authService.instance.setActiveAccount(payload.account);
           // this.getProfile(environment.apiConfig.uri);
           break;
-        default:
+        }
+        default: {
           if (this.authService.instance.getAllAccounts().length === 0) {
             console.log("No accounts detected, logging out");
             window.location.pathname = "/";
@@ -57,7 +73,7 @@ export class HeaderComponent {
             this.setLoginDisplay();
           }
           break;
-        
+        }
       }
       
     });

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Carousel, initTWE } from 'tw-elements';
 import { Highlighter } from './highlighter';
 import { NgClass, NgFor } from '@angular/common';

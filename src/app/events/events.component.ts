@@ -31,7 +31,7 @@ export class EventsComponent {
 
   // ngOnInit() {}
 
-  onTabChange(index: number) {
+  onTabChange(_index: number) {
     console.log('Tab Changed Here')
   }
 

@@ -31,6 +31,7 @@ module.exports = tseslint.config(
         },
       ],
       "@angular-eslint/prefer-inject": "off",
+      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     },
   },
   {
