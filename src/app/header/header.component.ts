@@ -85,11 +85,11 @@ export class HeaderComponent {
      * Note: Basic usage demonstrated. Your app may require more complicated account selection logic
      */
     console.log("checkAndSetActiveAccount");
-    let activeAccount = this.authService.instance.getActiveAccount();
+    const activeAccount = this.authService.instance.getActiveAccount();
 
     if (!activeAccount && this.authService.instance.getAllAccounts().length > 0) {
       console.log("No active account set, but there are accounts. Setting the first account as active account");
-      let accounts = this.authService.instance.getAllAccounts();
+      const accounts = this.authService.instance.getAllAccounts();
       this.authService.instance.setActiveAccount(accounts[0]);
     }
   }

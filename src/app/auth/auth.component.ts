@@ -3,7 +3,9 @@ import { Component, Inject } from '@angular/core';
 import { MSAL_GUARD_CONFIG, MsalBroadcastService, MsalGuardConfiguration, MsalService } from '@azure/msal-angular';
 // import { AuthenticationResult, EventMessage, EventType, InteractionStatus, PopupRequest, RedirectRequest } from '@azure/msal-browser';
 import { AuthenticationResult, PopupRequest } from '@azure/msal-browser';
-import { Subject, filter, takeUntil } from 'rxjs';
+// import { Subject, filter, takeUntil } from 'rxjs';
+import { Subject } from 'rxjs';
+
 // import { environment } from '../../environments/environment';
 
 

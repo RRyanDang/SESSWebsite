@@ -18,8 +18,8 @@ import { ESSCO_EVENTS } from '../../data/essco.events';
 })
 export class EventsComponent {
 
-  title: string = 'Events';
-  bannerUrl: string = 'https://students.senecapolytechnic.ca/attachment?file=e1kVwFuW19CSYDjK2wGG2Q%3D%3D';
+  title = 'Events';
+  bannerUrl = 'https://students.senecapolytechnic.ca/attachment?file=e1kVwFuW19CSYDjK2wGG2Q%3D%3D';
 
   items = [
     {title: "Internal", events: INTERNAL_EVENTS},

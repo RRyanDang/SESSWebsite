@@ -9,8 +9,10 @@ import { Component, Input } from '@angular/core';
   styleUrl: './banner.component.css'
 })
 export class BannerComponent {
-  @Input() title: string = '';
-  @Input() url: string = '';
+  // @Input() title: string = '';
+  // @Input() url: string = '';
+  @Input() title = '';
+  @Input() url = '';
 }
 
 
