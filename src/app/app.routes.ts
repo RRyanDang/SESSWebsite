@@ -13,18 +13,16 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { SecComponent } from './sec/sec.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent, title: 'Seneca Engineering Students\' Society'},
-    { path: 'contact-us', component: ContactUsComponent },
-    { path: 'about', 
-        loadChildren: () => import('./about/about.route')
-        .then(r=>r.aboutRoutes)},
-    { path: 'events', 
-        loadChildren: () => import('./events/events.route')
-        .then (r=>r.eventsRoutes)
-    },
-    { path: 'sec', component: SecComponent }
-    // { path: 'resources', component: ResourcesComponent },
-    // { path: 'auth', component: AuthComponent },
-    // { path: 'profile', component: ProfileComponent, canActivate: [MsalGuard]},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent, title: "Seneca Engineering Students' Society" },
+  { path: 'contact-us', component: ContactUsComponent },
+  { path: 'about', loadChildren: () => import('./about/about.route').then((r) => r.aboutRoutes) },
+  {
+    path: 'events',
+    loadChildren: () => import('./events/events.route').then((r) => r.eventsRoutes),
+  },
+  { path: 'sec', component: SecComponent },
+  // { path: 'resources', component: ResourcesComponent },
+  // { path: 'auth', component: AuthComponent },
+  // { path: 'profile', component: ProfileComponent, canActivate: [MsalGuard]},
 ];

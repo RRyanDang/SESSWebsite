@@ -10,13 +10,12 @@ import { initFlowbite } from 'flowbite';
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
-export class AppComponent implements OnInit{
-  title = 'Seneca Engineering Students\' Society';
+export class AppComponent implements OnInit {
+  title = "Seneca Engineering Students' Society";
 
   ngOnInit(): void {
     initFlowbite();
   }
-
 }

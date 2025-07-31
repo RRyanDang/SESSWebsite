@@ -1,7 +1,6 @@
-
 <div class="flex flex-col space-y-4 my-4">
-    <div *ngFor="let info of sessInfo; index as i " class="border rounded-lg">
-        <!-- <div class="flex items-center justify-between p-4 cursor-pointer" (click)="toggleSection(i)">
+  <div *ngFor="let info of sessInfo; index as i" class="border rounded-lg">
+    <!-- <div class="flex items-center justify-between p-4 cursor-pointer" (click)="toggleSection(i)">
             <h2 class="text-lg font-normal text-red-600">{{info.header}}</h2>
             <svg #arrow{{i}} [id]="'arrow' + i" class="w-6 h-6 transform transition-transform duration-300" viewBox="0 0 24 24">
                 <path d="M12 15.41L18.59 9L20 10.41L12 18.41L4 10.41L5.41 9L12 15.41Z" />
@@ -10,20 +9,30 @@
         <div #content{{i}} [id]="'content' + i" class="p-4 hidden transform transition-transform duration-300">
             <p>{{info.content}}</p>
         </div> -->
-        <button 
-        type = "button"
-        class="flex items-center justify-between p-4 cursor-pointer" 
-        (click)="toggleSection(i)">
-          <h2 class="text-lg font-normal text-red-600">{{info.header}}</h2>
-          <svg #arrow{{i}} [id]="'arrow' + i" class="w-6 h-6 transform transition-transform duration-300" viewBox="0 0 24 24">
-              <path d="M12 15.41L18.59 9L20 10.41L12 18.41L4 10.41L5.41 9L12 15.41Z" />
-          </svg>
-        </button>
-        
-        <div #content{{i}} [id]="'content' + i" class="p-4 hidden transform transition-transform duration-300">
-            <p>{{info.content}}</p>
-        </div>
+    <button
+      type="button"
+      class="flex items-center justify-between p-4 cursor-pointer"
+      (click)="toggleSection(i)"
+    >
+      <h2 class="text-lg font-normal text-red-600">{{ info.header }}</h2>
+      <svg
+        #arrow{{i}}
+        [id]="'arrow' + i"
+        class="w-6 h-6 transform transition-transform duration-300"
+        viewBox="0 0 24 24"
+      >
+        <path d="M12 15.41L18.59 9L20 10.41L12 18.41L4 10.41L5.41 9L12 15.41Z" />
+      </svg>
+    </button>
+
+    <div
+      #content{{i}}
+      [id]="'content' + i"
+      class="p-4 hidden transform transition-transform duration-300"
+    >
+      <p>{{ info.content }}</p>
     </div>
+  </div>
 </div>
 
 <!-- set 2 -->
@@ -63,4 +72,3 @@
       </div>
     </div>
   </div> -->
-  
