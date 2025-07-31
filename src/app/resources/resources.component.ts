@@ -6,10 +6,10 @@ import { BannerComponent } from '../shared/banner/banner.component';
   standalone: true,
   imports: [BannerComponent],
   templateUrl: './resources.component.html',
-  styleUrl: './resources.component.css'
+  styleUrl: './resources.component.css',
 })
 export class ResourcesComponent {
   title = 'Resources';
-  bannerUrl = 'https://photos.applyboard.com/school_photos/000/014/167/photos/original/SenecaCollegeYorkgate-ComputerLab-Jan2021.jpg?1659724026'
-
+  bannerUrl =
+    'https://photos.applyboard.com/school_photos/000/014/167/photos/original/SenecaCollegeYorkgate-ComputerLab-Jan2021.jpg?1659724026';
 }

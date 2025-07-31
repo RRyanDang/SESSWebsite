@@ -8,7 +8,7 @@ import { iEvent } from '../../interfaces/ievent';
   standalone: true,
   imports: [NgIf],
   templateUrl: './event-card.component.html',
-  styleUrl: './event-card.component.css'
+  styleUrl: './event-card.component.css',
 })
 export class EventCardComponent {
   @Input() event?: iEvent;
