@@ -28,7 +28,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-
 ## Sample websites:
 
 [Conestoga](https://www.conestogaengsoc.com/about-us)
@@ -40,8 +39,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 [CFES](https://cfes.ca/)
 
 [ESSCO](https://www.essco.ca/)
-
-
 
 ## Resources:
 
@@ -56,7 +53,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 To install msal, run command:
 
     npm install @azure/msal-angular @azure/msal-browser
-
 
 ## SSL for localhost
 

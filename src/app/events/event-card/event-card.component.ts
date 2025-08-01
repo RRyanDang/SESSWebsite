@@ -1,4 +1,5 @@
-import { LowerCasePipe, NgIf } from '@angular/common';
+// import { LowerCasePipe, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { iEvent } from '../../interfaces/ievent';
 
@@ -7,7 +8,7 @@ import { iEvent } from '../../interfaces/ievent';
   standalone: true,
   imports: [NgIf],
   templateUrl: './event-card.component.html',
-  styleUrl: './event-card.component.css'
+  styleUrl: './event-card.component.css',
 })
 export class EventCardComponent {
   @Input() event?: iEvent;
