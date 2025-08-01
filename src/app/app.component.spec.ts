@@ -35,8 +35,8 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule], // Fix for HttpClient error
-      declarations: [AppComponent],
+      imports: [HttpClientTestingModule, AppComponent], // Fix for HttpClient error
+      // declarations: [AppComponent],
     }).compileComponents();
   });
 

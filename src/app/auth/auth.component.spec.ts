@@ -34,7 +34,8 @@ describe('AuthComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AuthComponent],
+      // declarations: [AuthComponent],
+      imports: [AuthComponent],
       providers: [
         { provide: MsalService, useClass: MockMsalService },
         { provide: MSAL_GUARD_CONFIG, useValue: {} }, // FIX: must be in providers, not imports
