@@ -24,7 +24,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AuthComponent } from './auth.component';
 import { MSAL_GUARD_CONFIG, MsalService } from '@azure/msal-angular';
-
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 // Mock MSAL Service
 class MockMsalService {}
 
@@ -35,7 +35,7 @@ describe('AuthComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       // declarations: [AuthComponent],
-      imports: [AuthComponent],
+      imports: [AuthComponent, HttpClientTestingModule],
       providers: [
         { provide: MsalService, useClass: MockMsalService },
         { provide: MSAL_GUARD_CONFIG, useValue: {} }, // FIX: must be in providers, not imports

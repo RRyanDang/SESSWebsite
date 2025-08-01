@@ -36,6 +36,7 @@ describe('HeaderComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
+        HeaderComponent,
         HttpClientTestingModule, // Fix for "No provider for HttpClient"
       ],
       providers: [
