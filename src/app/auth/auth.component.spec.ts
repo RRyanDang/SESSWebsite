@@ -23,7 +23,7 @@
 
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AuthComponent } from './auth.component';
-import { MSAL_GUARD_CONFIG, MsalService } from '@azure/msal-angular';
+import { MSAL_GUARD_CONFIG, MsalService, MsalBroadcastService } from '@azure/msal-angular';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 // Mock MSAL Service
 class MockMsalService {}
@@ -39,6 +39,7 @@ describe('AuthComponent', () => {
       providers: [
         { provide: MsalService, useClass: MockMsalService },
         { provide: MSAL_GUARD_CONFIG, useValue: {} }, // FIX: must be in providers, not imports
+        { provide: MsalBroadcastService, useClass: MsalBroadcastService },
       ],
     }).compileComponents();
 

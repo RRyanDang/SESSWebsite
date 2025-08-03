@@ -31,12 +31,17 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { MsalService, MsalBroadcastService } from '@azure/msal-angular';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [HttpClientTestingModule, AppComponent], // Fix for HttpClient error
       // declarations: [AppComponent],
+      providers: [
+        { provide: MsalService, useClass: MsalService },
+        { provide: MsalBroadcastService, useClass: MsalBroadcastService },
+      ],
     }).compileComponents();
   });
 
