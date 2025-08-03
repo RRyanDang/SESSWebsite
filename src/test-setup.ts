@@ -12,7 +12,7 @@ beforeEach(() => {
     providers: [
       { provide: MSAL_INSTANCE, useValue: mockMsalInstance },
       MsalService,
-      MsalBroadcastService
-    ]
+      MsalBroadcastService,
+    ],
   });
 });
