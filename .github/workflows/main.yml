@@ -2,43 +2,40 @@ name: Angular CI workflow
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: check out code briefly
-      uses: actions/checkout@v4
+      - name: check out code briefly
+        uses: actions/checkout@v4
 
-    - name: build Node env
-      uses: actions/setup-node@v4
-      with: 
-        node-version: '20'
+      - name: build Node env
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: run Lint
-      run: npm run lint
-    
-    - name: ✅ Run Prettier Format Check
-      run: npm run format:check
+      - name: run Lint
+        run: npm run lint
 
-    - name: Run Unit Tests
-      run: npm run test -- --watch=false --browsers=ChromeHeadless --code-coverage
+      - name: ✅ Run Prettier Format Check
+        run: npm run format:check
 
-    - name: Upload Coverage Report
-      uses: actions/upload-artifact@v4
-      with:
-        name: coverage-report
-        path: coverage/
+      - name: Run Unit Tests
+        run: npm run test -- --watch=false --browsers=ChromeHeadless --code-coverage
 
-    - name: Build Angular App
-      run: npm run build -- --configuration=production
-        
-    
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/
+
+      - name: Build Angular App
+        run: npm run build -- --configuration=production

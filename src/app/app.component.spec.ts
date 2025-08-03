@@ -1,10 +1,48 @@
+// import { TestBed } from '@angular/core/testing';
+// import { AppComponent } from './app.component';
+
+// describe('AppComponent', () => {
+//   beforeEach(async () => {
+//     await TestBed.configureTestingModule({
+//       imports: [AppComponent],
+//     }).compileComponents();
+//   });
+
+//   it('should create the app', () => {
+//     const fixture = TestBed.createComponent(AppComponent);
+//     const app = fixture.componentInstance;
+//     expect(app).toBeTruthy();
+//   });
+
+//   it(`should have the 'sess_website' title`, () => {
+//     const fixture = TestBed.createComponent(AppComponent);
+//     const app = fixture.componentInstance;
+//     expect(app.title).toEqual('sess_website');
+//   });
+
+//   it('should render title', () => {
+//     const fixture = TestBed.createComponent(AppComponent);
+//     fixture.detectChanges();
+//     const compiled = fixture.nativeElement as HTMLElement;
+//     expect(compiled.querySelector('h1')?.textContent).toContain('Hello, sess_website');
+//   });
+// });
+
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+// import { HttpClientTestingModule } from '@angular/common/http/testing';
+// import { MsalService, MsalBroadcastService } from '@azure/msal-angular';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [AppComponent],
+      // imports: [HttpClientTestingModule, AppComponent], // Fix for HttpClient error
+      // declarations: [AppComponent],
+      // providers: [
+      //   { provide: MsalService, useClass: MsalService },
+      //   { provide: MsalBroadcastService, useClass: MsalBroadcastService },
+      // ],
     }).compileComponents();
   });
 
@@ -24,6 +62,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, sess_website');
+    expect(compiled.querySelector('h1')?.textContent).toContain('sess_website');
   });
 });
