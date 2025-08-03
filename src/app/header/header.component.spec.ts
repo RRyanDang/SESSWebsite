@@ -27,7 +27,7 @@ import { HeaderComponent } from './header.component';
 // import { MsalService, MsalBroadcastService } from '@azure/msal-angular';
 
 // Simple mock for MsalService
-class MockMsalService {}
+// class MockMsalService {}
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
