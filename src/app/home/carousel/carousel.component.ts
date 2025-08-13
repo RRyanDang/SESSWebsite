@@ -8,7 +8,7 @@ import { NgClass, NgFor } from '@angular/common';
   standalone: true,
   imports: [NgFor, NgClass],
   templateUrl: './carousel.component.html',
-  styleUrl: './carousel.component.css',
+  styleUrls: ['./carousel.component.css'],
 })
 export class CarouselComponent {
   highlights: Highlighter[] = [

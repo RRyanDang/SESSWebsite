@@ -6,7 +6,7 @@ import { BannerComponent } from '../shared/banner/banner.component';
   standalone: true,
   imports: [BannerComponent],
   templateUrl: './contact-us.component.html',
-  styleUrl: './contact-us.component.css',
+  styleUrls: ['./contact-us.component.css'],
 })
 export class ContactUsComponent {
   title = 'Contact Us';

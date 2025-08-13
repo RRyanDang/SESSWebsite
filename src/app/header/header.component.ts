@@ -19,7 +19,7 @@ import { ProfileType } from '../profile/profile.component';
   standalone: true,
   imports: [RouterLink, RouterLinkActive, RouterModule, NgIf, NgClass],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css',
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
   profile: ProfileType | undefined;
