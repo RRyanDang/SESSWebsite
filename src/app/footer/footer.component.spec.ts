@@ -4,7 +4,7 @@ import { FooterComponent } from './footer.component';
 describe('FooterComponent', () => {
   let component: FooterComponent;
   let fixture: ComponentFixture<FooterComponent>;
-  let nativeEl: HTMLElement;
+  // let nativeEl: HTMLElement;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -14,7 +14,7 @@ describe('FooterComponent', () => {
     fixture = TestBed.createComponent(FooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-    nativeEl = fixture.nativeElement;
+    // nativeEl = fixture.nativeElement;
   });
 
   it('should create', () => {
