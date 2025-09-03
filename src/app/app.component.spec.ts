@@ -69,6 +69,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -76,7 +77,7 @@ describe('AppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent, HeaderComponent],
+      imports: [AppComponent, HeaderComponent, RouterTestingModule],
     }).compileComponents();
 
     fixture = TestBed.createComponent(AppComponent);
