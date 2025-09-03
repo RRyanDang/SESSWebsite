@@ -24,7 +24,7 @@ import { Component } from '@angular/core';
 // import { BannerComponent } from '../shared/banner/banner.component';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-header',
   standalone: true,
   imports: [],
   templateUrl: './app.component.html',
