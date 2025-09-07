@@ -24,11 +24,12 @@ import { Component } from '@angular/core';
 // import { BannerComponent } from '../shared/banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FooterComponent],
+  imports: [RouterOutlet, FooterComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
