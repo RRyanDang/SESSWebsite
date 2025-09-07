@@ -22,10 +22,13 @@
 
 import { Component } from '@angular/core';
 // import { BannerComponent } from '../shared/banner/banner.component';
+import { FooterComponent } from './footer/footer.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
+  imports: [RouterOutlet, FooterComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
