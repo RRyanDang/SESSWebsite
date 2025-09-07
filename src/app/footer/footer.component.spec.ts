@@ -23,13 +23,15 @@ describe('FooterComponent', () => {
 
   it('should display address text', () => {
     const text = nativeEl.textContent || '';
-    expect(text).toContain('Seneca Engineering Students\' Society');
+    expect(text).toContain("Seneca Engineering Students' Society");
     expect(text).toContain('1750 Finch Ave. East');
   });
 
   it('should have Instagram and YouTube links', () => {
-    const links = Array.from(nativeEl.querySelectorAll('a')).map(a => (a as HTMLAnchorElement).href);
-    expect(links.some(href => href.includes('instagram.com/seneca.engsoc'))).toBeTrue();
-    expect(links.some(href => href.includes('youtube.com/@SenecaEngSoc'))).toBeTrue();
+    const links = Array.from(nativeEl.querySelectorAll('a')).map(
+      (a) => (a as HTMLAnchorElement).href,
+    );
+    expect(links.some((href) => href.includes('instagram.com/seneca.engsoc'))).toBeTrue();
+    expect(links.some((href) => href.includes('youtube.com/@SenecaEngSoc'))).toBeTrue();
   });
 });
