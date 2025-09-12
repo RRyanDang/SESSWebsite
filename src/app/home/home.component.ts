@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { CarouselComponent } from './carousel/carousel.component';
 import { Router } from '@angular/router';
 
