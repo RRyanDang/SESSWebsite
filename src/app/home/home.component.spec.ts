@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 // Mock child component
-@Component({selector: 'app-carousel', template: ''})
+@Component({selector: 'app-carousel', template: '', standalone: true})
 class MockCarousel {}
 
 describe('HomeComponent', () => {
