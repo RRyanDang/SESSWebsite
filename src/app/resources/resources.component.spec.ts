@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ResourcesComponent } from './resources.component';
+import { BannerComponent } from '../shared/banner/banner.component';
 
 describe('ResourcesComponent', () => {
   let component: ResourcesComponent;
@@ -7,7 +8,7 @@ describe('ResourcesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ResourcesComponent],
+      imports: [ResourcesComponent, BannerComponent],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ResourcesComponent);
