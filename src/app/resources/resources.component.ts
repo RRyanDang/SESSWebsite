@@ -9,6 +9,8 @@ import { BannerComponent } from '../shared/banner/banner.component';
   styleUrl: './resources.component.css',
 })
 export class ResourcesComponent {
+
+  // passing in 2 variables so HTML can freely use. Nothing special here.
   title = 'Resources';
   bannerUrl =
     'https://photos.applyboard.com/school_photos/000/014/167/photos/original/SenecaCollegeYorkgate-ComputerLab-Jan2021.jpg?1659724026';
