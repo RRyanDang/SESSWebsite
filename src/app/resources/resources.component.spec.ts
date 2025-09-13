@@ -21,6 +21,7 @@ describe('ResourcesComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  // test the app-banner's ability to take inputs
   it('should receive inputs in the app-banner component',()=>{
     component.title = 'Test Title';
     component.bannerUrl = 'https://duckduckgo.com/?q=test+image&iar=images&t=ffab&iai=https%3A%2F%2Fglobal-uploads.webflow.com%2F619e15d781b21202de206fb5%2F6304ea816823cf0a4b06f777_what-is-testing.jpg';

@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { SECCategory } from '../interfaces/seccategory';
+import { NgFor } from '@angular/common';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-sec',
   standalone: true,
-  imports: [],
+  imports: [NgFor, NgClass],
   templateUrl: './sec.component.html',
   styleUrl: './sec.component.css',
 })
