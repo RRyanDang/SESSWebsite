@@ -58,7 +58,9 @@ describe('SecComponent', () => {
 
     fixture.detectChanges();
 
-    const sections = fixture.debugElement.queryAll(By.css('section'));
+    const hostElement = fixture.debugElement.nativeElement;
+    const sections = hostElement.querySelectorAll(':scope > section');
+
     expect(sections.length).toBe(component.categories.length);
   });
 
