@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
 import { SecComponent } from './sec.component';
-import { NgClass } from '@angular/common';
-import { NgFor } from '@angular/common';
+import { By } from '@angular/platform-browser';
+// import { NgClass } from '@angular/common';
+// import { NgFor } from '@angular/common';
 
 describe('SecComponent', () => {
   let component: SecComponent;
