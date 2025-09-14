@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { SecComponent } from './sec.component';
-import { By } from '@angular/platform-browser';
+// import { By } from '@angular/platform-browser';
 // import { NgClass } from '@angular/common';
 // import { NgFor } from '@angular/common';
 
