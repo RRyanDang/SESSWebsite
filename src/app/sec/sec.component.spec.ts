@@ -36,6 +36,28 @@ describe('SecComponent', () => {
   // });
 
   it('should render the same number of sections as categories', () => {
+    
+    component.categories = [
+      {
+        title: 'Test 1',
+        details:
+          'Generic Test 1 Details',
+        description:
+          'Generic Test 1 Description',
+        image: 'https://duckduckgo.com/?q=test+image&iar=images&t=ffab&iai=https%3A%2F%2Fglobal-uploads.webflow.com%2F619e15d781b21202de206fb5%2F6304ea816823cf0a4b06f777_what-is-testing.jpg',
+      },
+      {
+        title: 'Test 2',
+        details:
+          'Generic Test 2 Details',
+        description:
+          'Generic Test 2 Description',
+        image: 'https://duckduckgo.com/?q=test+image&iar=images&t=ffab&iai=https%3A%2F%2Fglobal-uploads.webflow.com%2F619e15d781b21202de206fb5%2F6304ea816823cf0a4b06f777_what-is-testing.jpg',
+      },
+    ]
+
+    fixture.detectChanges();
+
     const sections = fixture.debugElement.queryAll(By.css('section'));
     expect(sections.length).toBe(component.categories.length);
   });
