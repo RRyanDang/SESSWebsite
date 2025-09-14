@@ -6,9 +6,9 @@ import { BannerComponent } from '../shared/banner/banner.component';
   standalone: true,
   imports: [BannerComponent],
   templateUrl: './contact-us.component.html',
-  styleUrl: './contact-us.component.css'
+  styleUrls: ['./contact-us.component.css'],
 })
 export class ContactUsComponent {
-  title: string = 'Contact Us';
-  bannerUrl: string = 'https://www.nakdesignstrategies.com/cms/wp-content/uploads/2018/07/1723-001_2x1-1200x600.jpg';
+  title = 'Contact Us';
+  bannerUrl = 'https://www.nakdesignstrategies.com/cms/wp-content/uploads/2018/07/1723-001_2x1-1200x600.jpg';
 }

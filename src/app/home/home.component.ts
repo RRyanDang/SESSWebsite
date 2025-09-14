@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { CarouselComponent } from './carousel/carousel.component';
 import { Router } from '@angular/router';
 
@@ -8,12 +7,10 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [CarouselComponent],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-
-
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   navigateAbout() {
     // console.log('Navigating to about page');
@@ -28,5 +25,4 @@ export class HomeComponent {
   navigateAnnouncements() {
     this.router.navigate(['sec']);
   }
-
 }

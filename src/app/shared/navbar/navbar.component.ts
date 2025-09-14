@@ -7,16 +7,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   standalone: true,
   imports: [RouterLink, RouterLinkActive, NgClass, NgStyle, NgFor],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrl: './navbar.component.css',
 })
 export class NavbarComponent {
-  @Input() items: {title: string, link: string}[] = [];
+  @Input() items: { title: string; link: string }[] = [];
 
-  ngOnInit() {
+  // ngOnInit() {
 
-  }
-
-
+  // }
 }
-
-
