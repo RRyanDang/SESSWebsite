@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-// import { By } from '@angular/platform-browser';
+import { By } from '@angular/platform-browser';
 import { SecComponent } from './sec.component';
+import { NgClass } from '@angular/common';
+import { NgFor } from '@angular/common';
 
 describe('SecComponent', () => {
   let component: SecComponent;
@@ -33,10 +35,10 @@ describe('SecComponent', () => {
   //   expect(titles[1].textContent).toContain('Re-Engineering');
   // });
 
-  // it('should render the same number of sections as categories', () => {
-  //   const sections = fixture.debugElement.queryAll(By.css('section'));
-  //   expect(sections.length).toBe(component.categories.length);
-  // });
+  it('should render the same number of sections as categories', () => {
+    const sections = fixture.debugElement.queryAll(By.css('section'));
+    expect(sections.length).toBe(component.categories.length);
+  });
 
   // it('should render titles for all categories', () => {
   //   const titles = fixture.debugElement.queryAll(By.css('h1.text-2xl'));
