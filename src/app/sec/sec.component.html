@@ -35,7 +35,7 @@
 
   <hr />
 
-  <section
+  <main
     *ngFor="let category of categories; let i = index"
     class="flex flex-col md:flex-row max-w-full my-8 gap-6"
     [ngClass]="{ 'md:flex-row-reverse': i % 2 === 1 }" 
@@ -55,5 +55,5 @@
         alt="Image description"
       />
     </div>
-  </section>
+  </main>
 </div>
