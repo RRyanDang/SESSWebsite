@@ -1,15 +1,15 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { EventsComponent } from './events/events.component';
+// import { AboutComponent } from './about/about.component';
+// import { EventsComponent } from './events/events.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { WhoWeAreComponent } from './about/who-we-are/who-we-are.component';
-import { OurTeamComponent } from './about/our-team/our-team.component';
-import { GetInvolvedComponent } from './about/get-involved/get-involved.component';
-import { ResourcesComponent } from './resources/resources.component';
-import { AuthComponent } from './auth/auth.component';
-import { ProfileComponent } from './profile/profile.component';
-import { MsalGuard } from '@azure/msal-angular';
+// import { WhoWeAreComponent } from './about/who-we-are/who-we-are.component';
+// import { OurTeamComponent } from './about/our-team/our-team.component';
+// import { GetInvolvedComponent } from './about/get-involved/get-involved.component';
+// import { ResourcesComponent } from './resources/resources.component';
+// import { AuthComponent } from './auth/auth.component';
+// import { ProfileComponent } from './profile/profile.component';
+// import { MsalGuard } from '@azure/msal-angular';
 import { SecComponent } from './sec/sec.component';
 
 export const routes: Routes = [

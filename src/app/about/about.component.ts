@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { NgClass, NgIf } from '@angular/common';
+// import { NgClass, NgIf } from '@angular/common';
+import { NgClass } from '@angular/common';
 import { BannerComponent } from '../shared/banner/banner.component';
 import { NavbarComponent } from '../shared/navbar/navbar.component';
 import {MatTabsModule} from '@angular/material/tabs';

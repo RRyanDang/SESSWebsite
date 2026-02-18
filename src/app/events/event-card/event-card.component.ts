@@ -1,4 +1,5 @@
-import { LowerCasePipe, NgIf } from '@angular/common';
+// import { LowerCasePipe, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { iEvent } from '../../interfaces/ievent';
 
